@@ -1,0 +1,148 @@
+.chatBoardGrid {
+  display: flex;
+  // grid-template-columns: 12% 88%;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+  border-bottom: 1px solid #e9edef;
+  img {
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 5px 14px;
+  }
+  div:nth-child(2) {
+    flex-grow: 1;
+    p {
+      margin: 0;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 240px;
+    }
+  }
+}
+
+.chat_msg_pane {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin: 12px;
+}
+.sender_chat_pane {
+  justify-content: flex-end;
+  span {
+    background-color: #d9fdd3;
+  }
+}
+
+.receiver_chat_pane {
+  justify-content: flex-start;
+  span {
+    background-color: #ffffff;
+  }
+}
+.chat_pane {
+  padding: 10px;
+  color: #111b21;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(11, 20, 26, 0.13);
+  div:first-child {
+    max-width: 100%;
+    font-size: 12.8px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #53bdeb !important;
+  }
+}
+.chat_profile {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.chat_app_container {
+  display: flex;
+  flex-direction: row;
+  nav {
+    height: 100vh;
+    border-right: 1px solid #f0f2f5;
+    overflow: auto;
+    width: 360px;
+  }
+  section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.msg_panel {
+  // flex: 1;
+  // overflow: auto;
+  // justify-content: flex-end;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 10px;
+  padding: 0px 10px 8px 10px;
+  height: calc(100vh - 125px);
+  overflow: auto;
+}
+
+.chatting_pane {
+  background-color: #f0f2f5;
+  padding: 10px 20px;
+  // margin-top: 15px;
+  display: flex;
+  column-gap: 10px;
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+.editableDiv {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 14px;
+  line-height: 14px;
+  outline: none;
+  caret-color: auto;
+  cursor: text;
+  flex: 1;
+  p {
+    margin: 0;
+  }
+}
+// .editableDiv:focus {
+//   border-color: none;
+// }
+.chatHeader {
+  flex: 1 1;
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+  background-color: #f0f2f5;
+  column-gap: 15px;
+  img {
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    /* padding: 5px 14px; */
+    background-color: white;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+
+.Chater_Head {
+  background-color: #d9fdd3;
+}
+.flex {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5px;
+}
+.chat-menu {
+  padding: 10px;
+  cursor: pointer;
+}

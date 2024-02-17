@@ -1,0 +1,1 @@
+export const LOGIN_AUTH_CONST: string = "LOGIN_AUTH_CONST";
